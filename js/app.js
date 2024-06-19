@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginButton = document.getElementById('loginButton');
 
     loginButton.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita o envio do formulário para o servidor
+        event.preventDefault(); 
 
-        // Captura os valores dos campos
+        
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        // Validação simples
+        
         if (username === "" || password === "") {
             alert("Por favor, preencha todos os campos.");
             return;
@@ -42,12 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const user = arrUser.find(user => user.nome === username && user.senha === password);
 
-        // Simulação de verificação de credenciais (normalmente você verificaria no servidor)
+        
         if (user) {
             alert("Login realizado com sucesso!\nNome de usuário: " + username);
             localStorage.setItem('loggedInUser', JSON.stringify(user));
 
-            // Redirecionar ou executar outras ações após login bem-sucedido
+            
             window.location.href = '../../home-pos/index.html';
         } else {
             alert("Nome de usuário ou senha incorretos.");
@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const efetuarRegistro = document.getElementById('efetuarRegistro');
 
     efetuarRegistro.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita o envio do formulário para o servidor
+        event.preventDefault(); 
 
-        // Captura os valores dos campos
+        
         const nome = document.getElementById('nome').value;
         const sobrenome = document.getElementById('sobrenome').value;
         const dataNascimento = document.getElementById('dataNascimento').value;
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const senha = document.getElementById('senha').value;
         const confirmaSenha = document.getElementById('confirmaSenha').value;
 
-        // Validação simples
+        
         if (!nome || !sobrenome || !dataNascimento || !cpf || !telefone || !email || !senha || !confirmaSenha) {
             alert("Por favor, preencha todos os campos.");
             return;
@@ -85,16 +85,17 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Simulação de envio de dados (normalmente você enviaria para um servidor)
+        
         alert("Registro efetuado com sucesso!\n" + nome + " " + sobrenome);
-
+        window.location.href = '../login/index.html'
         adicionarAoArrUser({ nome: nome, sobrenome: sobrenome, senha: senha });
 
-        // Redirecionar ou executar outras ações após o registro bem-sucedido
+        
         limparFormulario();
     });
 });
 
+// Função de limpar usuário
 function limparFormulario() {
     document.getElementById('nome').value = '';
     document.getElementById('sobrenome').value = '';

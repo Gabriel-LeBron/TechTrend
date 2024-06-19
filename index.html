@@ -23,23 +23,24 @@
         data-aos-duration="600">
 
         <div class="d-flex justify-content-between w-100 align-items-center">
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                aria-controls="staticBackdrop">
+            <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop-offcanvas"
+                aria-controls="staticBackdrop-offcanvas">
                 <i class="bi bi-list text-light fs-2"></i>
             </button>
-            <div class="navbar-brand d-flex w-10 m-auto">
+            <div class="navbar-brand d-flex w-10 justify-content-center m-auto ">
                 <img src="imgs/logo2.png" alt="Bootstrap" class="img-fluid rounded-circle" id="home">
             </div>
-            <ul>
-                <li class="list-group-item ">
-                    <a href="login-registro-esqueceusenha/login/index.html" class="bg-success text-light text-decoration-none p-2 rounded-2 mx-3 text-end">Login</a>
-                </li>
-            </ul>
+
+            <button class="btn btn-success mx-3 botao">
+                <a href="login-registro-esqueceusenha/login/index.html"
+                    class="text-light text-decoration-none p-2 rounded-2 text-end">Login</a>
+            </button>
+
         </div>
     </nav>
 
 
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop-offcanvas"
         aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="staticBackdropLabel">Páginas:</h5>
@@ -48,10 +49,10 @@
         <div class="offcanvas-body">
             <div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li><a class="nav-link active" href="#">Você está aqui! <i class="bi bi-geo-fill"></i> </a></li>
-                    <li><a class="nav-link active" href="catalogo/index.html">Catálogo <i
-                                class="bi bi-clipboard-fill"></i></a></li>
-                    <li><a class="nav-link active" href="mes_dos_namorados/index.html">Mês dos namorados <i class="bi bi-balloon-heart-fill"></i> </a></li>
+                    <li><a class="nav-link active" href="#"><i class="bi bi-geo-fill"></i> Você está aqui!  </a></li>
+                    <li><a class="nav-link active" href="catalogo/index.html"><i
+                                class="bi bi-clipboard-fill"></i> Catálogo </a></li>
+                    <li><a class="nav-link active" href="mes_dos_namorados/index.html"><i class="bi bi-balloon-heart-fill"></i> Mês dos namorados  </a></li>
                     </li>
                 </ul>
             </div>
@@ -81,14 +82,14 @@
                 <div class="carousel-item">
                     <img src="imgs/segunda_imagem_carrosel.webp" class="d-block w-100 mt-3" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h5 class="text-tertiary">Tudo para seu bem estar e para que sua vida seja mais prática!</h5>
+                        <h5 class="text-tertiary titulo-carrosel">Tudo para seu bem estar e para que sua vida seja mais prática!</h5>
                         <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="imgs/TERCEIRA_IMAGEM_PLMRDDDDDDS.jpg" class="d-block w-100 mt-3" alt="...">
                     <div class="carousel-caption d-md-block ">
-                        <h5 class="h5-carrosel-tres">Estilo inteligente, inovação que você veste!</h5>
+                        <h5 class="h5-carrosel-tres titulo-carrosel">Estilo inteligente, inovação que você veste!</h5>
                         <p></p>
                     </div>
                 </div>
@@ -145,7 +146,7 @@
                 <div href="" id="collapseTwo" class="accordion-collapse collapse text-decoration-none"
                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <a href="catalogo/index.html" class="card" style="width: 18rem;">
+                        <a href="catalogo/index.html#google-glass" class="card" style="width: 18rem;">
                             <img src="imgs/vr-google-lens.webp" class="card-img-top" alt="">
                             <div class="card-body">
                                 <br><br><br>
@@ -163,7 +164,7 @@
                         Upright-go, colar para ajustar a postura
                     </button>
                 </h2>
-                <a href="catalogo/index.html" id="collapseThree"
+                <a href="catalogo/index.html#colar-postura" id="collapseThree"
                     class="accordion-collapse collapse text-decoration-none" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
@@ -184,7 +185,7 @@
                         Faixa de cabeça para dormir, com bluetooth
                     </button>
                 </h2>
-                <a href="catalogo/index.html" id="collapseFour" class="accordion-collapse collapse text-decoration-none"
+                <a href="catalogo/index.html#faixa-cabeca" id="collapseFour" class="accordion-collapse collapse text-decoration-none"
                     aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="card" style="width: 18rem;">
@@ -214,7 +215,7 @@
                 </div>
             </a>
 
-            <a href="catalogo/index.html"
+            <a href="catalogo/index.html#google-glass"
                 class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-decoration-none" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="1500">
                 <div class="card" style="width: 18rem;">
@@ -226,7 +227,7 @@
                 </div>
             </a>
 
-            <a href="catalogo/index.html"
+            <a href="catalogo/index.html#colar-postura"
                 class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-decoration-none" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="2000">
                 <div class="card" style="width: 18rem;">
@@ -237,7 +238,7 @@
                 </div>
             </a>
 
-            <a href="catalogo/index.html"
+            <a href="catalogo/index.html#faixa-cabeca"
                 class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-decoration-none" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="2500">
                 <div class="card" style="width: 18rem;">
@@ -262,7 +263,7 @@
                         Fit bit charge
                     </button>
                 </h2>
-                <a href="catalogo/index.html" id="collapseOne1"
+                <a href="catalogo/index.html#fit-bit" id="collapseOne1"
                     class="accordion-collapse collapse show text-decoration-none" aria-labelledby="headingOne1"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
@@ -284,7 +285,7 @@
                         Apple airpods pro
                     </button>
                 </h2>
-                <a href="catalogo/index.html" id="collapseTwo2" class="accordion-collapse collapse text-decoration-none"
+                <a href="catalogo/index.html#apple-airpods" id="collapseTwo2" class="accordion-collapse collapse text-decoration-none"
                     aria-labelledby="headingTwo2" data-bs-parent="#accordionExample1">
                     <div class="accordion-body">
                         <div class="card" style="width: 18rem;">
@@ -305,7 +306,7 @@
                         Óculos quest 2 VR
                     </button>
                 </h2>
-                <a href="catalogo/index.html" id="collapseThree3"
+                <a href="catalogo/index.html#oculos-vr" id="collapseThree3"
                     class="accordion-collapse collapse text-decoration-none" aria-labelledby="headingThree3"
                     data-bs-parent="#accordionExample1">
                     <div class="accordion-body">
@@ -326,7 +327,7 @@
                         Withings sleep(Monitor de sono)
                     </button>
                 </h2>
-                <a href="catalogo/index.html" id="collapseFour4"
+                <a href="catalogo/index.html#withings-sleep" id="collapseFour4"
                     class="accordion-collapse collapse text-decoration-none" aria-labelledby="headingFour4"
                     data-bs-parent="#accordionExample1">
                     <div class="accordion-body">
@@ -343,7 +344,7 @@
 
         <!-- Cards - visíveis apenas em monitores maiores -->
         <div class="row d-none d-md-flex">
-            <a href="catalogo/index.html"
+            <a href="catalogo/index.html#fit-bit"
                 class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-decoration-none" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="500">
                 <div class="card" style="width: 18rem;">
@@ -354,7 +355,7 @@
                     </div>
                 </div>
             </a>
-            <a href="catalogo/index.html"
+            <a href="catalogo/index.html#apple-airpods"
                 class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-decoration-none" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="1500">
                 <div class="card" style="width: 18rem;">
@@ -365,7 +366,7 @@
                     </div>
                 </div>
             </a>
-            <a href="catalogo/index.html"
+            <a href="catalogo/index.html#oculos-vr"
                 class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-decoration-none" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="2000">
                 <div class="card" style="width: 18rem;">
@@ -376,7 +377,7 @@
                     </div>
                 </div>
             </a>
-            <a href="catalogo/index.html"
+            <a href="catalogo/index.html#withings-sleep"
                 class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-decoration-none" data-aos="fade-down"
                 data-aos-easing="linear" data-aos-duration="2500">
                 <div class="card" style="width: 18rem;">
@@ -402,21 +403,23 @@
 
             <div class="col-lg-2 text-center mb-3">
                 <h3>Links Úteis:</h3>
-                        <li class="list-group-item">
-                            <a class="text-decoration-none text-light" href="sobre_nos/index.html">Sobre Nós <i class="bi bi-person-arms-up"></i></a>
-                        </li>
-                        <li class="list-group-item">
-                            <a class="text-decoration-none text-light " href="Contato/index.html">Contato <i class="bi bi-whatsapp"></i> </a>
-                        </li>                                 
+               
+                <li class="list-group-item">
+                    <a class="text-decoration-none text-light" href="sobre_nos/index.html"> <i class="bi bi-person-arms-up"></i>‎ Sobre Nós ‎ </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="text-decoration-none text-light " href="Contato/index.html"> <i class="bi bi-whatsapp"></i> Contato  ‎ ‎ ‎ ‎ ‎</a>
+                </li>
+                 
             </div>
 
             <div class="col-lg-2 text-center mb-3 ">
                 <h3 >Siga-nos</h3>
                 <div class="d-flex flex-column">
-                    <a class="text-decoration-none text-light" href="https://www.instagram.com/pedro_vmb/"><i
+                    <a class="text-decoration-none text-light" target="_blank" href="https://www.instagram.com/pedro_vmb/"><i
                             class="bi bi-instagram"></i></a>
-                    <a class="text-decoration-none text-light" href="#"><i class="bi bi-github"></i></a>
-                    <a class="text-decoration-none text-light" href="https://x.com/pitlebron"><i class="bi bi-twitter-x"></i></a>
+                    <a class="text-decoration-none text-light" target="_blank" href="https://github.com/Gabriel-LeBron/TechTrend"><i class="bi bi-github"></i></a>
+                    <a class="text-decoration-none text-light" target="_blank" href="https://x.com/pitlebron"><i class="bi bi-twitter-x"></i></a>
 
                 </div>
             </div>

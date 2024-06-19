@@ -64,4 +64,10 @@ body {
     line-height: 1.6;
   }
   
+  .img-pad{
+    padding-bottom:0%;
+  }
+  .pad-apple{
+    padding-top:13%;
+  }
   

@@ -4,6 +4,10 @@ body {
     background-color: #ffffff;
   }
   
+  .padding-top{
+    padding-top: 100px;
+  }
+
   .main {
     width: 600px;
     height: auto;
@@ -63,5 +67,10 @@ body {
     color: #000000;
     line-height: 1.6;
   }
-  
+  .img-pad{
+    padding-bottom:0%;
+  }
+  .pad-apple{
+    padding-top:13%;
+  }
   
