@@ -1,0 +1,105 @@
+.header {
+    background-color: #bd1f2d;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6%;
+    background-color: #ffffff;
+  }
+  
+  .hero-text {
+    width: 80%;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .hero-image {
+    max-width: 60%;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .discount-banner {
+    background-color: #bd1f2d;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .cta-button {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    background-color: #bd1f2d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transform: rotate(-90deg) translate(-50%, -50%);
+    transform-origin: left top;
+  }
+  .bg-image{
+    background-image: url("/imgs/filosofia\ de\ atendimento\ ao\ cliente\ 600x400.jpg");
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media only screen and (min-width: 414px) and (max-width: 500px){
+    .hero{
+        display: block;
+    }
+    .hero-text {
+      width: 100%;
+    }
+    .w-75-css{
+      width: 75%;
+    }
+      }
+    
